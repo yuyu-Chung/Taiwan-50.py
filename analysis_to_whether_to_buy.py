@@ -189,21 +189,6 @@ def recommend_signal(new_data_pd, name):
         print(sell_np_cq)        
 
     print("   ")
-
-
-"""
-做紀念用的:
-    if new_data_pd.SMA.iat[-1] > new_data_pd.LMA.iat[-1]:
-        if new_data_pd.Slope[-1] >0:
-            if buy_p <= new_data_pd.Close[-1] <= p_mean:
-                plt.scatter(last_index, last_value, marker="^", s=200, c="red", label="recommend to buy")
-                plt.text(last_index, last_value, str(last_index).replace("00:00:00",""), color="black")
-    if new_data_pd.SMA.iat[-1] > new_data_pd.LMA.iat[-1]:
-        if new_data_pd.Slope[-1] >0:
-            if new_data_pd.Close[-1] >= sell_p:
-                plt.scatter(last_index, last_value, marker="v", s=200, c="green", label="recommend to sell")
-                plt.text(last_index, last_value, str(last_index).replace("00:00:00",""), color="black")
-"""
            
     
 rawdata = webcraw()
